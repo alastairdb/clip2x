@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "clip2x"
+version = "0.1.0"
+description = ""
+authors = [ "Alastair Burt <alastair.burt@gmail.com>" ]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sh = "^2.0.6"
+click = "^8.1.7"
+typed-settings = {extras = ["attrs"], version = "^24.2.0"}
+beautifulsoup4 = "^4.12.3"
+
+[tool.poetry.scripts]
+clip2x = 'clip2x.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
